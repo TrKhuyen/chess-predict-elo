@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  /* THÊM BACKGROUND IMAGE: Sử dụng ảnh từ URL của bạn */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                    url('./assets/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+h1, h3 {
+  color: #333;
+}
+
+/* Modal Overlay cho giao diện hết cờ */
+.game-over-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Làm tối nền để modal nổi bật */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  min-width: 300px;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.elo-display {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.elo-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 100px;
+}
+
+.elo-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.elo-value {
+  font-size: 18px;
+  font-weight: bold;
+}
